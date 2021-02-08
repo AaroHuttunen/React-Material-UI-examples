@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Elmo from './elmo.jpg';
+import Picture from './picture.jpg';
 
 function App() {
 
@@ -63,7 +63,7 @@ function App() {
 					(" ("+mousePos.x +","+mousePos.y+") "):
 					" "}  
 			</Typography>
-			<img src={Elmo} ref={imageEl} style={{"display": "none"}}/>
+			<img src={Picture} ref={imageEl} style={{"display": "none"}}/>
 		<canvas width="700" height="1000" ref={canvasRef} onMouseMove={setMouseCoordinates}/>
 		
 		</Box>
